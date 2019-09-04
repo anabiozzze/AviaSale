@@ -8,6 +8,7 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
+<<<<<<< HEAD
       <schema-mapping>
         <introspection-scope>
           <node kind="database" qname="@">
@@ -15,6 +16,9 @@
           </node>
         </introspection-scope>
       </schema-mapping>
+=======
+      <introspection-schemas>@:@</introspection-schemas>
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
     </data-source>
   </component>
 </project>

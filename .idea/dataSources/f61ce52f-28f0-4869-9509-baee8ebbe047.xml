@@ -6,6 +6,10 @@
     </root>
     <database id="2" parent="1" name="aviasale">
       <ObjectId>24576</ObjectId>
+<<<<<<< HEAD
+=======
+      <StateNumber>557</StateNumber>
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
       <Owner>postgres</Owner>
       <IntrospectionStateNumber>578</IntrospectionStateNumber>
       <Current>1</Current>
@@ -14,8 +18,13 @@
     <database id="3" parent="1" name="postgres">
       <ObjectId>12938</ObjectId>
       <Comment>default administrative connection database</Comment>
+<<<<<<< HEAD
       <Owner>postgres</Owner>
       <Substituted>1</Substituted>
+=======
+      <StateNumber>554</StateNumber>
+      <Owner>postgres</Owner>
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
     </database>
     <role id="4" parent="1" name="pg_monitor">
       <ObjectId>3373</ObjectId>
@@ -57,14 +66,20 @@
       <ObjectId>12648</ObjectId>
       <StateNumber>354</StateNumber>
       <Owner>postgres</Owner>
+<<<<<<< HEAD
       <Substituted>1</Substituted>
+=======
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
     </schema>
     <schema id="11" parent="2" name="pg_catalog">
       <ObjectId>11</ObjectId>
       <Comment>system catalog schema</Comment>
       <StateNumber>351</StateNumber>
       <Owner>postgres</Owner>
+<<<<<<< HEAD
       <Substituted>1</Substituted>
+=======
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
     </schema>
     <schema id="12" parent="2" name="pg_temp_1">
       <ObjectId>11736</ObjectId>
@@ -147,6 +162,7 @@
       <SchemaName>pg_catalog</SchemaName>
       <SchemaId>11</SchemaId>
     </extension>
+<<<<<<< HEAD
     <schema id="23" parent="3" name="information_schema">
       <Substituted>1</Substituted>
     </schema>
@@ -155,6 +171,9 @@
       <Substituted>1</Substituted>
     </schema>
     <sequence id="25" parent="15" name="hibernate_sequence">
+=======
+    <sequence id="23" parent="15" name="hibernate_sequence">
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
       <ObjectId>24585</ObjectId>
       <StateNumber>559</StateNumber>
       <Owner>postgres</Owner>
@@ -162,63 +181,103 @@
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
+<<<<<<< HEAD
     <table id="26" parent="15" name="client">
+=======
+    <table id="24" parent="15" name="client">
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
       <ObjectId>24587</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>576</StateNumber>
     </table>
+<<<<<<< HEAD
     <column id="27" parent="26" name="id">
+=======
+    <column id="25" parent="24" name="id">
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>576</StateNumber>
       <TypeId>23</TypeId>
     </column>
+<<<<<<< HEAD
     <column id="28" parent="26" name="birth_date">
+=======
+    <column id="26" parent="24" name="birth_date">
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>576</StateNumber>
       <TypeId>1043</TypeId>
     </column>
+<<<<<<< HEAD
     <column id="29" parent="26" name="first_name">
+=======
+    <column id="27" parent="24" name="first_name">
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>576</StateNumber>
       <TypeId>1043</TypeId>
     </column>
+<<<<<<< HEAD
     <column id="30" parent="26" name="last_name">
+=======
+    <column id="28" parent="24" name="last_name">
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>576</StateNumber>
       <TypeId>1043</TypeId>
     </column>
+<<<<<<< HEAD
     <column id="31" parent="26" name="nationality">
+=======
+    <column id="29" parent="24" name="nationality">
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>576</StateNumber>
       <TypeId>1043</TypeId>
     </column>
+<<<<<<< HEAD
     <column id="32" parent="26" name="pass_number">
+=======
+    <column id="30" parent="24" name="pass_number">
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
       <Position>6</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>576</StateNumber>
       <TypeId>20</TypeId>
     </column>
+<<<<<<< HEAD
     <column id="33" parent="26" name="sex">
+=======
+    <column id="31" parent="24" name="sex">
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>576</StateNumber>
       <TypeId>1043</TypeId>
     </column>
+<<<<<<< HEAD
     <index id="34" parent="26" name="client_pkey">
+=======
+    <index id="32" parent="24" name="client_pkey">
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
       <ObjectId>24593</ObjectId>
       <StateNumber>576</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
+<<<<<<< HEAD
     <key id="35" parent="26" name="client_pkey">
+=======
+    <key id="33" parent="24" name="client_pkey">
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
       <ObjectId>24594</ObjectId>
       <StateNumber>576</StateNumber>
       <ColNames>id</ColNames>
