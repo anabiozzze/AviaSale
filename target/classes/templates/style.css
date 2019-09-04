@@ -51,21 +51,42 @@ input, select {
     font-family: Roboto, sans-serif;
     color: black;
     text-shadow: none;
+    display: table-cell;
+    padding: 3px;
 }
+input, .birthDate{padding:1px 0}
 
-.main-form {
+.order-form {
     display: table;
     margin: 0 auto;
 }
 
-.input {
-    display: table-cell;
-    padding: 3px;
+.search-form {
+  display: table;
+  margin: 0 auto;
 }
 
-.select {
-    display: table-cell;
-    padding: 3px;
+.inputSearch {
+  display: table-cell;
+  padding: 3px;
+  height: 60px;
+  width: 150px;
+  background: #FFE3B7;
+  box-shadow: 0 0 0 1px #291810, 0 0 0 1px #9c8778;
+  background: #FAAB1B;
+  font-family: Roboto, sans-serif;
+}
+
+.selectSearch {
+  display: table-cell;
+  padding: 3px;
+  height: 60px;
+  width: 150px;
+
+  background: #FFE3B7;
+  box-shadow: 0 0 0 1px #291810, 0 0 0 1px #9c8778;
+  background: #FAAB1B;
+  font-family: Roboto, sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
