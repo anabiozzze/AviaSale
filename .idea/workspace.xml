@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf3c23ba-09b1-42df-987f-1e419fccbd44" name="Default Changelist" comment="" />
+<<<<<<< HEAD
+=======
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +70,8 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+<<<<<<< HEAD
+=======
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -117,6 +122,7 @@
       </file>
     </leaf>
   </component>
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -127,16 +133,21 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
+=======
   <component name="FindInProjectRecents">
     <findStrings>
       <find>7903d6ef6cfc592dcdd7f3d2a8a2d5a</find>
       <find>bee</find>
     </findStrings>
   </component>
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
+=======
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -161,6 +172,7 @@
       </list>
     </option>
   </component>
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -171,6 +183,10 @@
       </MavenImportingSettings>
     </option>
   </component>
+<<<<<<< HEAD
+  <component name="ProjectId" id="1QMqIZZjSCU7gt5D2fmK3xjz97B" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+=======
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="395" />
     <option name="y" value="-20" />
@@ -257,6 +273,7 @@
       <pane id="Scope" />
     </panes>
   </component>
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -268,6 +285,29 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/classes/templates/imgs" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\Projects\aviasale\src\main\resources\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dispatcher2\Documents\My Articulate Projects\AviaSale\target\classes\templates\imgs" />
+      <recent name="C:\Users\Dispatcher2\Documents\My Articulate Projects\AviaSale\target\classes\templates" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.anabiozzze.aviasale" />
+    </key>
+=======
     <property name="last_opened_file_path" value="C:/Program Files/Git/git-cmd.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -282,6 +322,7 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Java\Projects\aviasale\src\main\resources\templates" />
     </key>
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -327,7 +368,22 @@
       <updated>1567329854612</updated>
       <workItem from="1567329857981" duration="5748000" />
       <workItem from="1567339179487" duration="7227000" />
+<<<<<<< HEAD
       <workItem from="1567348981481" duration="12981000" />
+=======
+      <workItem from="1567348981481" duration="11910000" />
+<<<<<<< HEAD
+      <workItem from="1567590769346" duration="1111000" />
+      <workItem from="1567593286735" duration="4440000" />
+      <workItem from="1567600843287" duration="6382000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+=======
+>>>>>>> 4395ee3e433f77dd2fa0561ef4bc1840ce9e792f
     </task>
     <servers />
   </component>
@@ -562,4 +618,5 @@
       </provider>
     </entry>
   </component>
+>>>>>>> 61d0d8289c078903724ddddef895ddf72531dc90
 </project>
