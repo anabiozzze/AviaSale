@@ -34,7 +34,7 @@ public class GreetingController {
 
         // возвравщаем сохранённые данные
         Iterable<Client> clients = repo.findAll();
-        model.put("clients", client);
+        model.put("search", client);
 
         return "order";
     }

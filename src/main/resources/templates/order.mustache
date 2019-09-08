@@ -33,30 +33,30 @@
     <div class="site-wrapper-inner">
             <div class="masthead clearfix">
                 <div class="inner">
-                    <h3 class="masthead-brand"><i class="fa fa-phone fa-fw"><a href="tel:1234567890"></i> (123) 456-7890<br><small> позвоните нам <i class="fa fa-level-up"></i></small></a></h3>
-                    <nav>
-                        <ul class="nav masthead-nav">
-                            <li><a href="https://twitter.com/jenyelkind"><i class="fa fa-twitter fa-fw"></i></a></li>
-                            <li><a href="https://www.facebook.com/jenyelkind"><i class="fa fa-facebook fa-fw"></i></a></li>
-                            <li><a href="https://plus.google.com/+JenyElkind/"><i class="fa fa-google-plus fa-fw"></i></a></li>
-                            <li><a href="mailto:elkind@elkind.net"><i class="fa fa-envelope fa-fw"></i></a></li>
+                    <h3 class="masthead-brand"><i class="fa fa-phone fa-fw"><a href="tel:1234567890"/></i> (123) 456-7890<br><small> позвоните нам <i class="fa fa-level-up"></i></small></a></h3>
+                    <nav class="masthead-nav">
+                        <ul class="hr">
+                            <li><a href="https://twitter.com/jenyelkind"> <img class="logo1" src="/imgs/twitter.png"></a></li>
+                            <li><a href="https://www.facebook.com/jenyelkind"> <img class="logo1" src="/imgs/fblogo.png"></a></li>
+                            <li><a href="https://plus.google.com/+JenyElkind/"> <img class="logo1" src="/imgs/google+.png"></a></li>
+                            <li><a href="mailto:elkind@elkind.net"> <img class="logo1" src="/imgs/email.png"></a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
 
             <div class=" ">
-            <div class="inner cover">
-                <img class = "logo" src="/imgs/logobee.png">
+            <div class="inner cover" style="margin-top: 100px">
+                <img class="logo" src="/imgs/logobee.png">
                 <h1 class="cover-heading"> <i class="fa fa-clock-o fa-fw"></i> BT443 10:00 St Petersburg (Pulkovo) (LED) – 11:20 Riga (RIX)</h1>
                 <p class="lead">ДАТА ВЫЛЕТА: 11 Thu-Nov-2019 ДАТА ПРИЛЁТА: 11 Thu-Nov-2019 </p>
                 <p class="lead">Пожалуйста, завершите оформление билетов:</p>
                 <div id="clock"></div>
-        </div>
-    </div>
+            </div>
+            </div>
 
         <div class="order-form">
-            <form method="post">
+            <form class="form" method="post">
                 <div class="input"><input type="text" name="firstName" placeholder="Введите имя:"></div>
                 <div class="input"><input type="text" name="lastName" placeholder="Введите фамилию:"></div>
                 <div class="input"><input class="birthDate" type="date" name="birthDate" placeholder="Дата рождения:"></div>
@@ -293,22 +293,22 @@
                     <option value="ZM">ZAMBIA</option>
                     <option value="ZW">ZIMBABWE</option>
                 </select></div>
-
-<!--                <div>ВАШИ ДАННЫЕ:</div>-->
-<!--                {{#clients}}-->
-<!--                <div>-->
-<!--                    <b>{{id}}</b>-->
-<!--                    <span>ИМЯ: {{firstName}}</span>-->
-<!--                    <i>{{lastName}}</i>-->
-<!--                    <span>ГРАЖДАНСТВО: {{nationality}}</span>-->
-<!--                    <span>ПОЛ: {{sex}}</span>-->
-<!--                    <span>ДАТА РОЖДЕНИЯ: {{birthDate}}</span>-->
-<!--                    <span>НОМЕР ПАСПОРТА: {{passNumber}}</span>-->
-<!--                </div>-->
-<!--                {{/clients}}-->
-
-                <p class="lead"><button class="btn btn-lg btn-default" type="submit">Отправить</button></p>
             </form>
+
+            {{#clients}}
+            <div>
+                <b>ВАШИ ДАННЫЕ:</b>
+                <b>№: {{id}}</b>
+                <span>ИМЯ: {{firstName}}</span>
+                <i>ФАМИЛИЯ: {{lastName}}</i>
+                <span>ГРАЖДАНСТВО: {{nationality}}</span>
+                <span>ПОЛ: {{sex}}</span>
+                <span>ДАТА РОЖДЕНИЯ: {{birthDate}}</span>
+                <span>НОМЕР ПАСПОРТА: {{passNumber}}</span>
+            </div>
+            {{/clients}}
+
+            <p class="btn"><button class="btn1" type="submit">ACCEPT</button></p>
         </div>
 
         <div class="mastfoot">

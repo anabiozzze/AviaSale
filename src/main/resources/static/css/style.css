@@ -3,7 +3,7 @@
 a,
 a:focus,
 a:hover {
-  color: red;
+  color: #337AB7;
   transition: 0.2s;
   -moz-transition: 0.2s;
   -webkit-transition: 0.2s;
@@ -16,17 +16,6 @@ a:hover {
   text-decoration: none;
 }
 
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #BC9A3C;
-  text-shadow: none;
-  background-color: transparent;
-  border: 1px solid #BC9A3C;
-  border-radius: 2px;
-}
-
 
 /*
  * Base structure
@@ -35,14 +24,34 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #000;
+  background-color: white;
 }
 body {
   font-family: Roboto, sans-serif, white;
-  color: red;
+  color: #f1f1f1;
   text-align: center;
 
 }
+
+/*
+ * Header
+ */
+
+ul.hr {
+  margin-top: 25px;
+  margin-right: 10px;
+
+}
+ul.hr li {
+  display:inline-block;
+  padding: 3px;
+}
+
+
+/*
+ * Input Forms
+ */
+
 
 input, select {
   size: 150px;
@@ -51,23 +60,58 @@ input, select {
   font-family: Roboto, sans-serif;
   text-shadow: none;
   padding: 3px;
+  color: rgba(0, 0, 0, 0.4);
 
   border: 5px #BC9A3C;
   border-radius: 4px;
   background-color: #f1f1f1;
 }
 
+
+/* Custom default button */
+.btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.btn1 {
+  color: #BC9A3C;
+  text-shadow: none;
+  font-size: 100%;
+  background-color: transparent;
+  border: 1px solid #BC9A3C;
+  min-height: 40px;
+  min-width: 150px;
+  max-width: 150px;
+  border-radius: 2px;
+}
+
+/*Information fonts*/
+
+.cover-heading, lead, clock {
+  color: #f1f1f1;
+}
+
+
+/*Input forms to both pages*/
+
 .order-form {
   margin: 0 auto;
   display: table;
 }
 
+.form {
+  display: table;
+}
+
 .input {
   display: table-cell;
+  vertical-align: middle;
 }
 
 .select {
   display: table-cell;
+  vertical-align: middle;
 }
 
 .search-form {
@@ -77,6 +121,7 @@ input, select {
 
 .inputSearch {
   display: table-cell;
+  vertical-align: middle;
   padding: 3px;
   height: 60px;
   width: 150px;
@@ -84,6 +129,7 @@ input, select {
 
 .selectSearch {
   display: table-cell;
+  vertical-align: middle;
   padding: 3px;
   height: 60px;
   width: 150px;
@@ -102,43 +148,41 @@ input, select {
   position:relative;
 }
 .cover-container {
-  margin-right: auto;
-  margin-left: auto;
+
 }
 
-/* Padding for spacing */
+ Padding for spacing
 .inner {
-  padding: 30px;
+   padding: 30px;
+   margin-top: 30px;
 }
 
-/*
- * Header
- */
 
-.masthead-nav > li,
-.masthead-brand > li {
-  display: inline-block;
-}
-.masthead-nav > li + li,
-.masthead-brand > li + li {
-  margin-left: 20px;
-}
-.masthead-nav > li > a,
-.masthead-brand > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 28px;
-  font-weight: bold;
-  color: #fff;
-}
+/*.masthead-nav > li,*/
+/*.masthead-brand > li {*/
+/*  display: inline-block;*/
+/*}*/
+/*.masthead-nav > li + li,*/
+/*.masthead-brand > li + li {*/
+/*  margin-left: 20px;*/
+/*}*/
 
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus,
-.masthead-brand > li > a:hover,
-.masthead-brand > li > a:focus {
-  background-color: transparent;
-  color:#fff;
-}
+/*.masthead-nav > li > a,*/
+/*.masthead-brand > li > a {*/
+/*  padding-right: 0;*/
+/*  padding-left: 0;*/
+/*  font-size: 28px;*/
+/*  font-weight: bold;*/
+/*  color: #fff;*/
+/*}*/
+
+/*.masthead-nav > li > a:hover,*/
+/*.masthead-nav > li > a:focus,*/
+/*.masthead-brand > li > a:hover,*/
+/*.masthead-brand > li > a:focus {*/
+/*  background-color: transparent;*/
+/*  color:#fff;*/
+/*}*/
 
 .masthead a {
   text-decoration: none;
@@ -217,9 +261,6 @@ input, select {
  */
 
 .cover {
-  padding: 0px;
-}
-.cover .btn-lg {
   padding: 15px 50px;
   font-weight: bold;
 }
@@ -236,6 +277,13 @@ input, select {
   top:30px;
 }
 
+.logo1 {
+  width:100%;
+  height:100%;
+  position: center;
+  top:30px;
+}
+
 .input-form {
   opacity: 0.7;
   padding: 10px;
@@ -243,6 +291,7 @@ input, select {
 
 .lead {
   padding: 20px;
+  color: #f1f1f1;
 }
 
 small {
@@ -250,14 +299,16 @@ small {
 }
 
 #clock div {
-    display: inline-block;
-    font-size: 10px;
-    font-weight: 600;
-    margin:0 8px 20px 8px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 30px;
+  display: inline-block;
+  color: #f1f1f1;
+  font-size: 10px;
+  font-weight: 600;
+  margin:0 8px 20px 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 30px;
 }
+
 #clock span {
     display: block;
     font-size: 32px;
@@ -271,6 +322,7 @@ small {
  */
 
 .mastfoot {
+  margin-top: 30px;
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
 }
@@ -283,6 +335,7 @@ small {
   .mastfoot {
     position: center;
     margin: 0 auto;
+    margin-top: 30px;
     bottom: 0;
   }
   .site-wrapper-inner {

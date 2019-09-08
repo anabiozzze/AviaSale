@@ -9,12 +9,12 @@
 
     <title>BEEFLY TICKET STORE</title>
 
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css"  rel="stylesheet" type="text/css">
+
     <!-- Bootstrap core CSS -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-    <!-- Custom styles for this template -->
-    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type="text/css">
@@ -32,27 +32,28 @@
 
     <div class="overlay"></div>
     <div class="site-wrapper-inner">
-            <div class="masthead clearfix">
-                <div class="inner">
-                    <h3 class="masthead-brand"><i class="fa fa-phone fa-fw"><a href="tel:1234567890"></i> (123) 456-7890<br><small> позвоните нам <i class="fa fa-level-up"></i></small></a></h3>
-                    <nav>
-                        <ul class="nav masthead-nav">
-                            <li><a href="https://twitter.com/jenyelkind"><i class="fa fa-twitter fa-fw"></i></a></li>
-                            <li><a href="https://www.facebook.com/jenyelkind"><i class="fa fa-facebook fa-fw"></i></a></li>
-                            <li><a href="https://plus.google.com/+JenyElkind/"><i class="fa fa-google-plus fa-fw"></i></a></li>
-                            <li><a href="mailto:elkind@elkind.net"><i class="fa fa-envelope fa-fw"></i></a></li>
-                        </ul>
-                    </nav>
-                </div>
+        <div class="masthead clearfix">
+            <div class="inner">
+                <h3 class="masthead-brand"><i class="fa fa-phone fa-fw"><a href="tel:1234567890"/></i> (123) 456-7890<br><small> позвоните нам <i class="fa fa-level-up"></i></small></a></h3>
+                <nav class="masthead-nav">
+                    <ul class="hr">
+                        <li><a href="https://twitter.com/jenyelkind"> <img class="logo1" src="/imgs/twitter.png"></a></li>
+                        <li><a href="https://www.facebook.com/jenyelkind"> <img class="logo1" src="/imgs/fblogo.png"></a></li>
+                        <li><a href="https://plus.google.com/+JenyElkind/"> <img class="logo1" src="/imgs/google+.png"></a></li>
+                        <li><a href="mailto:elkind@elkind.net"> <img class="logo1" src="/imgs/email.png"></a></li>
+                    </ul>
+                </nav>
             </div>
+        </div>
 
-            <div class="cover-container">
-            <div class="inner cover">
-                <img class = "logo" src="../static/imgs/logobee.png">
+        <div class=" ">
+            <div class="inner cover" style="margin-top: 100px">
+                <img class="logo" src="/imgs/logobee.png">
                 <h1 class="cover-heading"> <i class="fa fa-clock-o fa-fw"></i> Выберите дату и маршрут:</h1>
                 <p class="lead">мы ищем самые дешёвые билеты через более чем 40 агрегаторов </p>
         </div>
-    </div>
+        </div>
+
         <div class="search-form">
             <form method="post">
                 <div class="inputSearch"><input class="dateTo" type="date" name="dateTo" placeholder="Туда:"></div>
@@ -79,8 +80,10 @@
                     <option value="Tln">Таллин</option>
                     <option value="Lnd">Лондон</option>
                 </select></div>
-                <p class="lead"><a href="http://forbetterweb.com/htmlandbootstrap/classic-cover-video-background-one-page-websites-html-bootstrap/" class="btn btn-lg btn-default">SEARCH</a></p>
             </form>
+
+            <p class="btn"><button class="btn1" type="submit">SEARCH</button></p>
+
         </div>
 
         <div class="mastfoot">
@@ -100,10 +103,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 <!-- Plugins and Custom JavaScript -->
-<script src="../static/js/device.min.js"></script>
-<script src="../static/js/jquery.mb.YTPlayer.js"></script>
-<script src="../static/js/jquery.countdown.min.js"></script>
-<script src="../static/js/custom.js"></script>
+<script src="/js/device.min.js"></script>
+<script src="/js/jquery.mb.YTPlayer.js"></script>
+<script src="/js/jquery.countdown.min.js"></script>
+<script src="/js/custom.js"></script>
 
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
