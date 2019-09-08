@@ -3,7 +3,7 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: red;
   transition: 0.2s;
   -moz-transition: 0.2s;
   -webkit-transition: 0.2s;
@@ -38,27 +38,36 @@ body {
   background-color: #000;
 }
 body {
-  font-family: Roboto, sans-serif;
-  color: #fff;
+  font-family: Roboto, sans-serif, white;
+  color: red;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+
 }
 
 input, select {
-    size: 150px;
-    height: 30px;
-    width: 150px;
-    font-family: Roboto, sans-serif;
-    color: black;
-    text-shadow: none;
-    display: table-cell;
-    padding: 3px;
+  size: 150px;
+  height: 30px;
+  width: 150px;
+  font-family: Roboto, sans-serif;
+  text-shadow: none;
+  padding: 3px;
+
+  border: 5px #BC9A3C;
+  border-radius: 4px;
+  background-color: #f1f1f1;
 }
-input, .birthDate{padding:1px 0}
 
 .order-form {
-    display: table;
-    margin: 0 auto;
+  margin: 0 auto;
+  display: table;
+}
+
+.input {
+  display: table-cell;
+}
+
+.select {
+  display: table-cell;
 }
 
 .search-form {
@@ -71,10 +80,6 @@ input, .birthDate{padding:1px 0}
   padding: 3px;
   height: 60px;
   width: 150px;
-  background: #FFE3B7;
-  box-shadow: 0 0 0 1px #291810, 0 0 0 1px #9c8778;
-  background: #FAAB1B;
-  font-family: Roboto, sans-serif;
 }
 
 .selectSearch {
@@ -82,11 +87,6 @@ input, .birthDate{padding:1px 0}
   padding: 3px;
   height: 60px;
   width: 150px;
-
-  background: #FFE3B7;
-  box-shadow: 0 0 0 1px #291810, 0 0 0 1px #9c8778;
-  background: #FAAB1B;
-  font-family: Roboto, sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -193,7 +193,7 @@ input, .birthDate{padding:1px 0}
 }
 
 .video-background-default-image {
-  background:url(imgs/cover.jpg);
+  background:url(../imgs/cover.jpg);
   background-repeat:no-repeat;
   background-position:center center;
   background-size:cover;
@@ -281,7 +281,8 @@ small {
     top: 0;
   }
   .mastfoot {
-    position: fixed;
+    position: center;
+    margin: 0 auto;
     bottom: 0;
   }
   .site-wrapper-inner {

@@ -9,20 +9,19 @@
 
     <title>BEEFLY TICKET STORE</title>
 
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css"  rel="stylesheet" type="text/css">
+
     <!-- Bootstrap core CSS -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
-
     <!-- Custom fonts for this template -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type="text/css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
 </head>
 
 <body>
@@ -46,22 +45,16 @@
                 </div>
             </div>
 
-            <div class="cover-container">
+            <div class=" ">
             <div class="inner cover">
-                <img class = "logo" src="imgs/logobee.png">
+                <img class = "logo" src="/imgs/logobee.png">
                 <h1 class="cover-heading"> <i class="fa fa-clock-o fa-fw"></i> BT443 10:00 St Petersburg (Pulkovo) (LED) – 11:20 Riga (RIX)</h1>
                 <p class="lead">ДАТА ВЫЛЕТА: 11 Thu-Nov-2019 ДАТА ПРИЛЁТА: 11 Thu-Nov-2019 </p>
                 <p class="lead">Пожалуйста, завершите оформление билетов:</p>
                 <div id="clock"></div>
-
-            <div class="mastfoot">
-                <div class="inner">
-                    <p>Copyright &copy; <a href="/">BEEFLY LTD</a></p>
-                    <p>Cover template by <a href="http://forbetterweb.com/">ForBetterWeb</a></p>
-                </div>
-            </div>
         </div>
     </div>
+
         <div class="order-form">
             <form method="post">
                 <div class="input"><input type="text" name="firstName" placeholder="Введите имя:"></div>
@@ -300,12 +293,33 @@
                     <option value="ZM">ZAMBIA</option>
                     <option value="ZW">ZIMBABWE</option>
                 </select></div>
-                <p class="lead"><a href="http://forbetterweb.com/htmlandbootstrap/classic-cover-video-background-one-page-websites-html-bootstrap/" class="btn btn-lg btn-default">ACCEPT</a></p>
+
+<!--                <div>ВАШИ ДАННЫЕ:</div>-->
+<!--                {{#clients}}-->
+<!--                <div>-->
+<!--                    <b>{{id}}</b>-->
+<!--                    <span>ИМЯ: {{firstName}}</span>-->
+<!--                    <i>{{lastName}}</i>-->
+<!--                    <span>ГРАЖДАНСТВО: {{nationality}}</span>-->
+<!--                    <span>ПОЛ: {{sex}}</span>-->
+<!--                    <span>ДАТА РОЖДЕНИЯ: {{birthDate}}</span>-->
+<!--                    <span>НОМЕР ПАСПОРТА: {{passNumber}}</span>-->
+<!--                </div>-->
+<!--                {{/clients}}-->
+
+                <p class="lead"><button class="btn btn-lg btn-default" type="submit">Отправить</button></p>
             </form>
         </div>
-    </div>
-</div>
 
+        <div class="mastfoot">
+            <div class="inner">
+                <p>Copyright &copy; <a href="/">BEEFLY LTD</a></p>
+                <p>Cover template by <a href="http://forbetterweb.com/">ForBetterWeb</a></p>
+            </div>
+        </div>
+    </div>
+
+</div>
 <!-- jQuery -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
@@ -313,10 +327,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 <!-- Plugins and Custom JavaScript -->
-<script src="js/device.min.js"></script>
-<script src="js/jquery.mb.YTPlayer.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="/js/device.min.js"></script>
+<script src="/js/jquery.mb.YTPlayer.js"></script>
+<script src="/js/jquery.countdown.min.js"></script>
+<script src="/js/custom.js"></script>
 
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -17,23 +17,14 @@ public class GreetingController {
     @Autowired
     private ClientRepo repo;
 
-    @GetMapping("/greeting")
-    public String greeting(
-            @RequestParam(name="name", required=false, defaultValue="World") String name,
-            Map<String, Object> model
-    ) {
-        model.put("name", name);
-        return "greeting";
-    }
-
-    @GetMapping
+    @GetMapping("/")
     public String main(Map<String, Object> model) {
         Iterable<Client> clients = repo.findAll();
         model.put("clients", clients);
-        return "main";
+        return "order";
     }
 
-    @PostMapping
+    @PostMapping("/")
     public String add(@RequestParam String firstName, @RequestParam String lastName, @RequestParam String nationality,
                       @RequestParam String sex, @RequestParam(name = "birthDate") @DateTimeFormat(pattern = "yyyy-MM-dd")
                                   Date birthDate, @RequestParam long passNumber, Map<String, Object> model) {
@@ -45,7 +36,7 @@ public class GreetingController {
         Iterable<Client> clients = repo.findAll();
         model.put("clients", client);
 
-        return "main";
+        return "order";
     }
 
 }
