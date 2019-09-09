@@ -100,7 +100,7 @@ input, select {
   display: table;
 }
 
-.form {
+.table-form {
   display: table;
 }
 
@@ -112,6 +112,11 @@ input, select {
 .select {
   display: table-cell;
   vertical-align: middle;
+}
+
+.check-text {
+  color: #f1f1f1;
+  margin-top: 10px;
 }
 
 .search-form {
@@ -291,6 +296,10 @@ input, select {
 
 .lead {
   padding: 20px;
+  color: #f1f1f1;
+}
+
+.lead1 {
   color: #f1f1f1;
 }
 

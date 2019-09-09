@@ -56,17 +56,17 @@
             </div>
 
         <div class="order-form">
-            <form class="form" method="post">
-                <div class="input"><input type="text" name="firstName" placeholder="Введите имя:"></div>
-                <div class="input"><input type="text" name="lastName" placeholder="Введите фамилию:"></div>
-                <div class="input"><input class="birthDate" type="date" name="birthDate" placeholder="Дата рождения:"></div>
-                <div class="input"><input type="number" name="passNumber" placeholder="Номер паспорта:"></div>
-                <div class="select"><select name="sex" required="true">
+                <form class="table-form1" method="post">
+                    <div class="input"><input type="text" name="firstName" placeholder="Введите имя:"></div>
+                    <div class="input"><input type="text" name="lastName" placeholder="Введите фамилию:"></div>
+                    <div class="input"><input class="birthDate" type="date" name="birthDate" placeholder="Дата рождения:"></div>
+                    <div class="input"><input type="number" name="passNumber" placeholder="Номер паспорта:"></div>
+                    <div class="select"><select name="sex" required="true">
                     <option disabled selected>Выберите пол:</option>
                     <option value="мужской">мужской</option>
                     <option value="женский">женский</option>
                 </select></div>
-                <div class="select"><select class="nation" name="nationality" required="true">
+                    <div class="select"><select class="nation" name="nationality" required="true">
                     <option disabled selected>Гражданство:</option>
                     <option value="AX">AALAND ISLANDS</option>
                     <option value="AF">AFGHANISTAN</option>
@@ -293,22 +293,8 @@
                     <option value="ZM">ZAMBIA</option>
                     <option value="ZW">ZIMBABWE</option>
                 </select></div>
-            </form>
-
-            {{#clients}}
-            <div>
-                <b>ВАШИ ДАННЫЕ:</b>
-                <b>№: {{id}}</b>
-                <span>ИМЯ: {{firstName}}</span>
-                <i>ФАМИЛИЯ: {{lastName}}</i>
-                <span>ГРАЖДАНСТВО: {{nationality}}</span>
-                <span>ПОЛ: {{sex}}</span>
-                <span>ДАТА РОЖДЕНИЯ: {{birthDate}}</span>
-                <span>НОМЕР ПАСПОРТА: {{passNumber}}</span>
-            </div>
-            {{/clients}}
-
-            <p class="btn"><button class="btn1" type="submit">ACCEPT</button></p>
+                    <p class="btn"><button class="btn1" type="submit">ACCEPT</button></p>
+                </form>
         </div>
 
         <div class="mastfoot">

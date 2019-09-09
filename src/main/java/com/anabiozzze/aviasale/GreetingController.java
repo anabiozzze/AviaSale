@@ -16,11 +16,12 @@ import java.util.Map;
 public class GreetingController {
     @Autowired
     private ClientRepo repo;
+    private Client client;
 
     @GetMapping("/")
     public String main(Map<String, Object> model) {
         Iterable<Client> clients = repo.findAll();
-        model.put("clients", clients);
+//        model.put("clients", clients);
         return "order";
     }
 
@@ -29,14 +30,19 @@ public class GreetingController {
                       @RequestParam String sex, @RequestParam(name = "birthDate") @DateTimeFormat(pattern = "yyyy-MM-dd")
                                   Date birthDate, @RequestParam long passNumber, Map<String, Object> model) {
         // сохраняем данные, введенные пользователем
-        Client client = new Client(firstName, lastName, nationality, sex, birthDate, passNumber);
+        client = new Client(firstName, lastName, nationality, sex, birthDate, passNumber);
         repo.save(client);
 
         // возвравщаем сохранённые данные
         Iterable<Client> clients = repo.findAll();
-        model.put("search", client);
+        model.put("clients", client);
+        return "check";
+    }
 
-        return "order";
+
+    @GetMapping("/check")
+    public String confirm() {
+        return "search";
     }
 
 }
