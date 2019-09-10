@@ -26,6 +26,11 @@
 
 <body>
 
+<form action="/logout" method="post">
+    <input type="submit" value="Sign Out"/>
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+</form>
+
 <div class="site-wrapper video-background">
     <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=gS_R8Ub9HuE', containment:'body', autoPlay:true, mute:true, startAt:1, stopAt: 480, quality:'small', opacity:1, }"></a>
 
@@ -57,6 +62,7 @@
 
         <div class="order-form">
                 <form class="table-form1" method="post">
+                    <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
                     <div class="input"><input type="text" name="firstName" placeholder="Введите имя:"></div>
                     <div class="input"><input type="text" name="lastName" placeholder="Введите фамилию:"></div>
                     <div class="input"><input class="birthDate" type="date" name="birthDate" placeholder="Дата рождения:"></div>

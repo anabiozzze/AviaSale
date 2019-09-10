@@ -27,6 +27,11 @@
 
 <body>
 
+<form action="/logout" method="post">
+    <input type="submit" value="Sign Out"/>
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+</form>
+
 <div class="site-wrapper video-background">
     <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=gS_R8Ub9HuE', containment:'body', autoPlay:true, mute:true, startAt:1, stopAt: 480, quality:'small', opacity:1, }"></a>
 
@@ -56,6 +61,7 @@
 
         <div class="search-form">
             <form method="post">
+                <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
                 <div class="inputSearch"><input class="dateTo" type="date" name="dateTo" placeholder="Туда:"></div>
                 <div class="inputSearch"><input class="dateBack" type="date" name="dateBack" placeholder="Обратно:"></div>
                 <div class="selectSearch"><select name="sex" required="true">

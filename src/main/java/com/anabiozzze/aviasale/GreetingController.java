@@ -19,13 +19,19 @@ public class GreetingController {
     private Client client;
 
     @GetMapping("/")
+    public String greeting(Map<String, Object> model) {
+
+        return "order";
+    }
+
+    @GetMapping("/order")
     public String main(Map<String, Object> model) {
         Iterable<Client> clients = repo.findAll();
 //        model.put("clients", clients);
         return "order";
     }
 
-    @PostMapping("/")
+    @PostMapping("/order")
     public String add(@RequestParam String firstName, @RequestParam String lastName, @RequestParam String nationality,
                       @RequestParam String sex, @RequestParam(name = "birthDate") @DateTimeFormat(pattern = "yyyy-MM-dd")
                                   Date birthDate, @RequestParam long passNumber, Map<String, Object> model) {
